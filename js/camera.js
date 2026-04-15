@@ -1,4 +1,4 @@
-const botaoIniciarCamera = document.querySelector("[data-video-botao]");
+/*const botaoIniciarCamera = document.querySelector("[data-video-botao]");
 const campoCamera = document.querySelector("[data-camera]");
 const video = document.querySelector("[data-video]");
 const botaoTirarFoto = document.querySelector("[data-tirar-foto]");
@@ -29,4 +29,4 @@ botaoTirarFoto.addEventListener('click', function () {
     mensagem.classList.add("flex");
     
     video.srcObject.getTracks().forEach(track => track.stop());
-});
+});*/
