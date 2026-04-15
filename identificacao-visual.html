@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Identificação Visual</title> 
+    <script src="https://cdn.tailwindcss.com"></script>
+</head> 
+<body class="bg-gray-50 text-gray-900 font-sans min-h-screen flex flex-col items-center justify-center p-4"> 
+
+    <main class="bg-white p-8 rounded shadow-lg border-t-4 border-blue-900 flex flex-col items-center gap-6 max-w-md w-full text-center">
+        <h2 class="text-2xl font-bold text-blue-900">Reconhecimento Facial</h2>
+        <p class="text-gray-600">Para concluir seu contato, precisamos confirmar sua identidade. Clique no quadro abaixo.</p>
+
+        <div data-video-botao class="w-full h-48 bg-gray-200 border-2 border-dashed border-gray-400 flex items-center justify-center cursor-pointer rounded">
+            <span class="font-bold text-gray-500">Clique para abrir a câmera</span>
+        </div>
+
+        <div data-camera class="hidden flex-col items-center gap-4">
+            <video autoplay data-video class="rounded shadow-md w-full max-w-[320px]"></video>
+            <button data-tirar-foto class="bg-blue-900 text-white font-bold py-2 px-4 rounded hover:bg-blue-800">Tirar foto</button>
+        </div>
+
+        <div data-mensagem class="hidden flex-col items-center gap-4">
+            <canvas data-video-canvas class="rounded shadow-md w-full max-w-[320px]"></canvas>
+            <p class="font-bold text-green-600 mt-2">Prontinho, imagem capturada com sucesso!</p>
+            <a href="index.html" class="bg-green-600 text-white font-bold py-2 px-4 rounded hover:bg-green-700 w-full mt-4">Finalizar Contato</a>
+        </div>
+    </main>
+
+    <script src="js/camera.js"></script>
+</body> 
+</html>
