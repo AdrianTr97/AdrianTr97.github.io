@@ -1,20 +1,13 @@
-export default function ehUmaIdadeValida(campo) {
-    const idade = campo.value;
-    if (idade < 10 || idade > 120) {
-        campo.setCustomValidity('A idade deve estar entre 10 e 120 anos.');
+export default function ehUmNomeValido(campo) {
+    const nome = campo.value;
+    // Regex para permitir apenas letras e espaços
+    const padraoNome = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]*$/;
+
+    if (nome.length < 3) {
+        campo.setCustomValidity('O nome deve ter pelo menos 3 caracteres.');
+    } else if (!padraoNome.test(nome)) {
+        campo.setCustomValidity('O nome não deve conter números ou símbolos.');
     } else {
         campo.setCustomValidity('');
     }
 }
-/*export default function ehMaiorDeIdade(campo) {
-    const dataNascimento = new Date(campo.value);
-    validaIdade(dataNascimento);
-    console.log(validaIdade(dataNascimento));
-}
-
-function validaIdade(data) {
-    const dataAtual = new Date();
-    const dataMais18 = new Date(data.getUTCFullYear() + 18, data.getUTCMonth(), data.getUTCDate());
-
-    return dataAtual >= dataMais18;
-}*/
