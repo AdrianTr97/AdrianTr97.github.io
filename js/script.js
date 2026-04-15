@@ -1,7 +1,7 @@
-import ehUmCPF from "./valida-cpf.js";
+/*import ehUmCPF from "./valida-cpf.js";
 import ehUmaIdadeValida from "./valida-idade.js";
 import ehUmNomeValido from "./valida-nome.js";
-import ehUmEmailValido from "./valida-email.js";
+import ehUmEmailValido from "./valida-email.js";*/
 
 // 1. TEMA (CLARO/ESCURO)
 
@@ -24,7 +24,7 @@ if (btnTema) btnTema.addEventListener("click", alternarTema);
 if (localStorage.getItem("tema") === "escuro") {
     htmlTag.classList.add("dark");
 }*/
-const btnTema = document.querySelector("#btn-tema");
+/*const btnTema = document.querySelector("#btn-tema");
 
 const alternarTema = function() {
     const corpo = document.querySelector("body");
@@ -196,4 +196,4 @@ if (formulario) {
             window.location.href = "identificacao-visual.html";
         }
     });
-}
+}*/
