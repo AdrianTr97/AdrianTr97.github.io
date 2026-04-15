@@ -6,12 +6,12 @@
         campo.setCustomValidity('');
     }
 }*/
-export default function ehUmaIdadeValida(idade) {
+/*export default function ehUmaIdadeValida(idade) {
     if (idade < 10 || idade > 120) {
         return false;
     }
     return true;
-}
+}*/
 /*export default function ehMaiorDeIdade(campo) {
     const dataNascimento = new Date(campo.value);
     validaIdade(dataNascimento);
